@@ -1,109 +1,170 @@
-<!DOCTYPE html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>the metts | est 2012</title>
+	
+    <link href="http://www.metts.co/bootstrap3/css/bootstrap.css" rel="stylesheet" />
+	<link href="http://www.metts.co/assets/css/styles.css" rel="stylesheet" />  
+    <link href="http://www.metts.co/assets/css/demo.css" rel="stylesheet" /> 
+    
+    <!--     Font Awesome     -->
+    <link href="http://www.metts.co/bootstrap3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
   
-  <title>we're the metts | est 2012</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css">	
-	
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="js/script.js"></script>
-
-  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <style>
-      body {
-        font-family: 'Lato', sans-serif;
-        font-weight: 100;
-      }
-  </style>
-	
 </head>
+<body>
+                      
+ <div id="navbar-full">
+    <div id="navbar">
+    <div class="navigation-example">
+         <nav class="navbar navbar-default" role="navigation-demo">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://www.metts.co"><font style="color:#c1c1c1">the</font> metts</a>
+            </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-example-2">
+              <ul class="nav navbar-nav">
+              	<li class="dropdown">
+                      <a href="./nicolas/index.html" class="dropdown-toggle" data-toggle="dropdown">nicolas<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="http://www.metts.co/nicolas/about.html">about</a></li>
+                        <li><a href="http://www.metts.co/nicolas/cv.html">cv</a></li>
+                        <li><a href="http://www.metts.co/nicolas/research.html">research</a></li>
+                        <li><a href="http://www.metts.co/nicolas/contact.html">contact</a></li>
+                      </ul>
+                </li>
+                <li class="dropdown">
+                      <a href="./rebecca/index.html" class="dropdown-toggle" data-toggle="dropdown">rebecca<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="http://www.metts.co/rebecca/about.html">about</a></li>
+                        <li><a href="http://www.metts.co/rebecca/portfolio.html">portfolio</a></li>
+                        <li><a href="http://www.metts.co/rebecca/blog.html">blog</a></li>
+                        <li><a href="http://www.metts.co/rebecca/contact.html">contact</a></li>
+                      </ul>
+                </li>
+                <li class="active"><a href="http://www.metts.co/everett/index.html">everett</a></li>
+              </ul>
+           
+            </div><!-- /.navbar-collapse -->
 
-<body onload="setupBlocks();">
+          </div><!-- /.container-fluid -->
+        </nav>        
+        
+        
+<div id="carousel">
+    <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://www.metts.co/assets/img/carousel.jpg" alt="Everett">
+        </div>
+        <div class="item">
+          <img src="http://www.metts.co/assets/img/carousel1.jpg" alt="Everett and Mama">
+        </div>
+        <div class="item">
+          <img src="http://www.metts.co/assets/img/carousel2.jpg" alt="The Metts">
+        </div>
+        <div class="item">
+          <img src="http://www.metts.co/assets/img/carousel3.jpg" alt="Everett and Dada">
+        </div>
+        <div class="item">
+          <img src="http://www.metts.co/assets/img/carousel4.jpg" alt="Everett and Dada again">
+        </div>
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="fa fa-angle-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="fa fa-angle-right"></span>
+      </a>
+    </div>
+</div> <!-- end carousel -->
 
-  <nav role="navigation">
-   <ul id="menu">
-    <li><a href="/" class="menu"></a></li>
-    <li><a href="/#home" data-filter=".home" class="menu"><span>our home</span></a></li>
-    <li><a href="/#fam" data-filter=".fam" class="menu"><span>the fam</span></a></li>
-    <li><a href="/#adventures" data-filter=".adventures" class="menu"><span>adventures</span></a></li>
-    </ul>
-    <a href="/#contact" data-filter=".contact" class="menu" id="contact"><span>contact</span></a>
-  </nav>
-  
-  <section id="monogram">
-  <div class="block">
-   <center>
-   <img width="250px" src="img/monogram.png" alt="metts monogram" title="monogram" />
-   </center>
-  </div>
-  </section>
+</div><!--  end navbar -->
 
-  <section id="home" class="home">
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus interdum vestibulum. Vestibulum semper, lectus interdum aliquet pulvinar, quam libero commodo mi, a eleifend lectus nibh et tortor.</p>
-	</div>
-  </section>
+</div> <!-- end menu-dropdown -->
 
-  <section id="fam" class="fam">
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu elementum metus interdum vestibulum. Vestibulum semper, lectus interdum aliquet pulvinar, quam libero commodo mi, a eleifend lectus nibh et tortor.</p>
-	</div>
-  </section>
-
-  <section id="adventures" class="adventures">
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. ecenas fringilla faucibus adipiscing. In feugiat, ipsum non posuere aliquam, purus nisi feugiat metus, mattis dapibus ipsum justo at risus. Morbi leo mauris, tristique facilisis consequat quis, volutpat quis tellus. Quisque semper, urna nec egestas venenatis, urna sem pellentesque ante, quis vestibulum augue massa vel arcu. Suspendisse porttitor posuere viverra. Cras vel ligula nunc, vitae congue lorem. Etiam aliquet nisl et diam iaculis id vulputate urna lobornibh et tortor.</p>
-  </div>
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus interdum vestibulum. Vestibulum semper, lectus interdum aliquet pulvinar, quam libero commodo mi, a eleifend lectus nibh et tortor.</p>
-  </div>
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus intlla faProin et malesuada arcu. Quisque sed nulla odio, at interdum diam. Proin mollis, dui eget tristique dictum, diam purus hendrerit urna, lacinia interdum sem justo sit amet justo. Morbi a neque ut velit tempus auctor. Sed condimentum dolor in est facilisis id malesuad</p>
-  </div>
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus interdum vestibulum. Vestibulum semper, lectus interdum aliquet pulvinar, quam libero commodo mi, a eleifend lectus nibh et tortor.</p>
-	</div>
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu elementum metus interdum vestibulum. Vestibulum semper, lectus interdum aliquet pulvinar, quam libero commodo mi, a eleifend lectus nibh et tortor.</p>
-  </div>
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. ecenas fringilla faucibus adipiscing. In feugiat, ipsum non posuere aliquam, purus nisi feugiat metus, mattis dapibus ipsum justo at risus. Morbi leo mauris, tristique facilisis consequat quis, volutpat quis tellus. Quisque semper, urna nec egestas venenatis, urna sem pellentesque ante, quis vestibulum augue massa vel arcu. Suspendisse porttitor posuere viverra. Cras vel ligula nunc, vitae congue lorem. Etiam aliquet nisl et diam iaculis id vulputate urna lobornibh et tortor.</p>
-  </div>
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justo. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus interdum vestibulum. Vestibulum semper, lectus interdum aliquet pulvinar, quam libero commodo mi, a eleifend lectus nibh et tortor.</p>
-  </div>
-
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dui velit. Curabitur purus odio, adipiscing ut vehicula at, pulvinar eu justVestibulum id malesuada magna. Etiam vel nunc sapien, id consectetur lacus. Donec feugiat lacus non lorem varius accumsan hendrerit ligula luctus. Matis. In lobortis, urna et posuere sagittis, lectus lacus condimentum nulla, id euismod ipsum elit at nulla.ris elementum metus interdum vestibulum. Vestibulum semper, lectus interdum aliquet pulvinar, quam libero commodo mi, a eleifend lectus nibh et tortor.</p>	
-  </div>
-
-  <div class="block">
-   <p>Lorem ipsum dolor sit amet, cto. Suspendisse potenti. Suspendisse dictum massa non mi posuere ac convallis nisi pellentesque. Morbi posuere mauris elementum metus is nibh et tortor.</p>
-  </div>
-
-  <div class="block">
-   <p>er lectus, at pellentesque tortor luctus eget. Phasellus cursus tellus sed velit mattis feugiat. Phasellus non metus felis, dictum auctor justo. Sed pharetra malesuada accumsan. Nunc eget nisi libero, quis egestas eros. Duis sit amet fermentum dui. Nulla ullamcorper massa sit amet magna pulvinar volutpat. Mauris dictum congue mi eu molestie.</p>
-  </div>
-  </section>
-
- <footer>
-  <section id="contact" class="contact">
-  <div class="block2">Webmaster</div>
-  </section>
- </footer>
+<footer>
+<div class="parallax-pro">
+    <div class="container">
+        <div class="row">
+             <div class="col-md-12 text-center">
+                <div class="credits">
+                    &copy; 2015 Rebecca Metts
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
 
 </body>
+
+    <script src="http://www.metts.co/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="http://www.metts.co/assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="http://www.metts.co/bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="http://www.metts.co/assets/js/checkbox.js"></script>
+	<script src="http://www.metts.co/assets/js/radio.js"></script>
+	<script src="http://www.metts.co/assets/js/bootstrapswitch.js"></script>
+	<script src="http://www.metts.co/assets/js/script.js"></script>
+	
+    <script src="http://www.metts.co/assets/js/custom.js"></script>
+
+<script type="text/javascript">
+         
+    $('.btn-tooltip').tooltip();
+    $('.label-tooltip').tooltip();
+    $('.pick-class-label').click(function(){
+        var new_class = $(this).attr('new-class');  
+        var old_class = $('#display-buttons').attr('data-class');
+        var display_div = $('#display-buttons');
+        if(display_div.length) {
+        var display_buttons = display_div.find('.btn');
+        display_buttons.removeClass(old_class);
+        display_buttons.addClass(new_class);
+        display_div.attr('data-class', new_class);
+        }
+    });
+    $( "#slider-range" ).slider({
+		range: true,
+		min: 0,
+		max: 500,
+		values: [ 75, 300 ],
+	});
+	$( "#slider-default" ).slider({
+			value: 70,
+			orientation: "horizontal",
+			range: "min",
+			animate: true
+	});
+	$('.carousel').carousel({
+      interval: 4000
+    });
+      
+    
+</script>
 </html>
